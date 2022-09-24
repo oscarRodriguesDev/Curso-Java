@@ -1,0 +1,97 @@
+JDBC 
+
+para conectar seu programa mao banco de dados importe o jar com o jdbc (driver de acesso com o banco)
+ dentro do seu projeto, com o botao direto do maouse clique em cima d seu projeto,>propiedadedes>libraries>
+ add jar>ok
+
+Java Data Bases Connectivy(conexoes com banco de dados java)
+
+
+SGBD>>>> sistema de gerenciamento de banco de dados
+
+sql>>>>> Liguagem para manipulação de banco de dados
+
+os programas java se comunicam e manipulam banco de dados atraves do driver JDBC
+
+
+um conjunto de dados organizdos e relacionados constitui 
+um banco de dados, um banco de dados relacional relaciona dados 
+em tabelas, esta tabelas sao composta de linhas e colunas
+
+bancos de dados existenstes 
+Sysbase, PostGreesql, Mysql, Oracle dentre outros
+
+-------------------------------------------------------------------------------------------------
+
+Forma de conectar com o banco de dados em sql
+<code>
+<connect> usuario/senha;
+
+criando um novo usuario:
+
+<code>
+<create user> novo usuario <identified by> senha;
+
+concedendo alguns ´privilegios ao novo usuario
+
+privilegio de conectar ao banco:
+
+<code>
+<grant connect, resource to> novo usuario;
+
+privilegio de adm no banco:
+
+<code>
+<grande dba to> novo usuario;
+
+USUARIO DO MEU BANCO>>>
+aed/88211663
+
+
+CRIANDO UMA TABELA(essa tabela foi realmente criada)
+<code>
+CREATE TABLE PESSOA(
+CODIGO  NUMBER(2.0),
+NOME VARCHAR2(15),
+SEXO CHAR(10),
+EMAIL VARCHAR2(30),
+);
+
+visualizar a tabela:
+
+<code>
+<select * from> nome da tabela
+
+inserção de dados na tabela criada:
+
+<code>
+insert into nometabela values(valores separados por virgulas)
+no caso da tabela acima
+insert into nometabela values( 1, 'nome','sexo','email');
+
+pra sair: 
+<code>
+<exit>
+
+aula 111 universidade xti
+
+outras url para connexao com banco de dados de acordo com o banco;
+
+Banco>>>>>>>>>>>>>>>>url
+
+DB2>>>>>>>>>>>>>>>>>>jdbc:db2:porta/banco
+oracle>>>>>>>>>>>>>>>jdbc:oracle:thin:@servidor:porta:banco
+postgreeSQL>>>>>>>>>>jdbc:postgreesql://servidor:porta/banco
+sql server >>>>>>>>>>jdbc:sqlserver:servidor:porta;database
+Mysql >>>>>>>>>>>>>>>jdbc:mysql://servidor:porta/banco
+java db>>>>>>>>>>>>>>jdbc:derby://servidor:porta/banco
+Sysbase>>>>>>>>>>>>>>jdbc:sybase:tds:servidoporta/banco
+
+para deletar campos de uma tabela
+<code>
+<delete from> nome tabela <where> especificação de deletação ;
+
+apagar toda a tabela
+
+<code>
+<drop table> nome da tabela;

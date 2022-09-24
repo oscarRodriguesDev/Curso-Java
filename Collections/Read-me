@@ -1,0 +1,13 @@
+Este pacote inclui conhecimentos sobre Coleções,
+ mas o que sao as coleçoes, sao conuntos ordenados de tipos, objetos, exemplo coleções de musicas,
+ coleções de cartas de baralho...
+   Ja estamos trabalhando com coleções desde o inicio do curso 
+   quando trabalhamos com  a classe ArrayList, 
+   as coleções se dividem em quatro tipos:
+   
+   Set: nao aceita duplicatas
+   List:aceita dados ordenados
+   Queue: dados em fila
+   Map:dados com Chave e um valor correspondente
+   
+   a classe ArrayList, abra as classes desse pacote e entenda como se ultilizam as coleçoes...

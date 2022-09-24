@@ -1,0 +1,19 @@
+Seu programa java pode conectar com outros
+ programas java que estao rodando em outra maquina e ou na rede
+ chamamos de relacionamento de cliente servidor
+ Para trabalhar na rede precisamos saber trez coisas:
+ 
+ 1°Como se conectar com um servidor rodando em outra maquina
+ 2°como enviar mensagens para este servidor
+ 3°como receber mensagens desse servidor
+ 
+ Para nos conectar com outra maquina precisamos de uma conexao  socket, 
+ um socket é um objeto que representa uma conexao de rede entre duas maquinas,
+  e a conexao é um relacionamento entre estas duas maquinas, 
+  onde ambos sabem da exitencia um do outro, e tambem como se conectarem entre si
+  
+  para conectar com um servidor preciso saber duas coisas:
+  o endereco ip, e a porta onde o programa esta sendo rodado
+  vamos criar uma conexao simples entre cliente e servidor apenas para demonstração
+  precisaremos informar o ip do servidor e a porta tcp, 
+  a porta tcp e um numero de 16 bits que identifica um prgrama no servidor
